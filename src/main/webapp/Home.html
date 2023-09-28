@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+</link>
+<link
+	rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></link>
+<style>
+#frm {
+	width: 500px;
+	margin: auto;
+	margin-top: auto;
+	margin-left: 60%;
+	height: 540px;
+	border-radius: 20px 5px;
+}
+
+body {
+	background-image: url('img4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 14px;
+	padding-top: 4px;
+}
+
+marquee {
+	margin: 10px;
+}
+
+.bgroup {
+	background-color: red;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: gray;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+.gnd {
+	font-weight: bold;
+	font-size: 128px;
+	color: red;
+}
+</style>
+</head>
+<body class="container-fluid">
+
+	<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+		<!-- Navbar content -->
+	</nav>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Maheshwawri Samaj</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarText" aria-controls="navbarText"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link"
+					href="WelcomePage.html"> Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li><i class="fa fa-whatsapp" aria-hidden="true"></i>
+					<button class="btn">
+						<a
+							href="https://api.whatsapp.com/send?phone=9173419273&text=Hello Welcome to Maheshwari Digital Blood Bank">Whatsaap</a>
+					</button></li>
+
+			</ul>
+			<span class="navbar-text"> Welcome to Maheshwari Samaj </span>
+		</div>
+	</nav>
+	<div>
+		<marquee>
+			<h2 style="color: tomato;"">Maheshwari Digital Blood Bank</h2>
+		</marquee>
+	</div>
+
+	<form action="RegistrationServlet" method="post" class="form card"
+		id="frm">
+		<h2 class="bg-danger text-white card-header"
+			style="text-align: center;">Registration Form</h2>
+		<table class="table table-hover">
+			<tr>
+				<td><input type="text" placeholder="Enter Full Name"
+					name="User_Name"></td>
+				<td><input type="text" placeholder="Father Name"
+					name="User_Fname"></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder="Surname" name="User_Sname"></td>
+				<td><input type="text" placeholder="caste" name="User_Caste"></td>
+			</tr>
+			<tr>
+				<td><input type="email" placeholder="Email" name="User_Email"></td>
+				<td><input type="password" placeholder="Set Password"
+					name="User_Password"></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder="Current City"
+					name="User_Ccity"></td>
+				<td><input type="text" placeholder="Native City"
+					name="User_Ncity"></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder="Contact Number"
+					name="User_Number"></td>
+				<td><b>D.O.B</b> <input type="Date" placeholder="D.O.B"
+					name="User_dob"></td>
+			</tr>
+			<tr>
+				<td><b>Blood Group</b></td>
+
+				<td><select name="User_Bgroup" class="bgroup">
+						<option value="A+">A+</option>
+						<option value="B+">B+</option>
+						<option value="AB+">AB+</option>
+						<option value="O+">O+</option>
+						<option value="A-">A-</option>
+						<option value="B-">B-</option>
+						<option value="O-">O-</option>
+						<option value="AB-">AB-</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><b>Gender</b></td>
+
+				<td><input type="radio" class="gnd" name="gender" value="male">Male
+					&nbsp; <input type="radio" class="gnd" name="gender" value="female">Female</td>
+			</tr>
+
+			<tr>
+				<td style="text-align: left"><b>Last Blood Donated:</b></td>
+
+				<td><input type="Date" name="user_lbd" placeholder=""
+					class="name" /></td>
+			</tr>
+			<tr class="card-footer">
+				<td><button type="Submit" style="width: 60%;"
+						class="btn btn-outline-success">Register</button></td>
+				<td><button type="reset" class="btn btn-outline-danger">Cancel</button></td>
+			</tr>
+
+		</table>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="loginpage.css"> -->
+    <title>Login page in HTML</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+</head>
+<style>
+body
+{
+	background-image: url('img4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 14px;
+	
+}
+.frm{
+border: 1px solid;
+width: 30%;
+padding: 20px;
+box-shadow: blue;
+text-align: center;
+margin-left: 55%;
+margin-top: 10%;
+background-color: transparent;
+border-left-color: red;
+box-shadow: gray;
+
+
+}
+.input{
+height: 30px;
+font-size: 15px;
+}
+.bttn{
+margin-top:30px;
+width: 30%;
+background-color: green;
+color: white;
+text-shadow: yellow;
+font-family: monospace;
+font-size: 20px;
+}
+h3{
+color: teal;
+font-family: monospace;
+font-size: 40px;
+}
+.lbl{
+font-size: 19px;
+}
+.register{
+color: teal;
+margin-top: 10px;
+font-size: 20px;
+font-style: oblique;
+}
+</style>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button  class="btn"><a href="https://api.whatsapp.com/send?phone=9173419273&text=Hello Welcome to Maheshwari Digital Blood Bank">Whatsaap</a></button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="WelcomePage.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Home.html">Register</a>
+      </li>
+     
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <div>
+ <marquee><h2 style="color: tomato;"">Welcome to Maheshwari Digital Blood Bank</h2></marquee>
+</div>
+    <form action="LoginCheck" class="frm">
+        <!-- Headings for the form -->
+         <div class="Error">
+            <h5 style="color:red; font-weight:bold; ">Invalid Email or Password Please try again!</h5>
+            
+        </div>
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+            
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <!-- Username -->
+            <label class="lbl" for="username"><b>Your Username</b></label>
+            <input type="text" class="input" placeholder="Enter Username" name="username" required>
+
+            <br><br>
+
+            <!-- Password -->
+            <label class="lbl" for="pswrd"><b>Your Password</b></label>
+            <input type="password" class="input" placeholder="Enter Password" name="pswrd" required>
+
+            <br>
+
+            <!-- Submit button -->
+             <button onclick="document.location='LoginCheck'" type="submit" class="bttn bttn-success">Login</button>
+<a href="LoginCheck.html"><button class="btn btn-outline-success">Good</button></a>
+            <!-- Sign up link -->
+            <p class="register">Not a member?  <a href="Home.html" class="register">Register here!</a>  </p>
+            <td style="font-size: 40px;" > </td> 
+          
+        </div>
+    </form>
+</body>
+</html>
